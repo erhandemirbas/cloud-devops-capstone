@@ -16,7 +16,8 @@ node {
 
   stage("Linting") {
     echo 'Linting'
-    sh 'tidy -q -e blue/*.html'
+    sh '/usr/bin/hlint blue/Dockerfile'
+    sh '/usr/bin/hlint green/Dockerfile'
   }
 
   stage('Building image blue') {
