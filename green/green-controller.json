@@ -22,7 +22,7 @@
             "containers":[
                {
                   "name":"green",
-                  "image":"erhandemirbas/green",
+                  "image":"erhandemirbas/capstone-green",
                   imagePullPolicy: Never
                   "ports":[
                      {
