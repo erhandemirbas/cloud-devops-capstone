@@ -23,7 +23,7 @@
                {
                   "name":"green",
                   "image":"erhandemirbas/green",
-                  imagePullPolicy: Never
+                  "imagePullPolicy": "Never",
                   "ports":[
                      {
                         "name":"http-server",
