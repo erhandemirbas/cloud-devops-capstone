@@ -1,6 +1,6 @@
 node {
-    def registry1 = 'erhandemirbas/capstone-blue'
-    def registry2 = 'erhandemirbas/capstone-green'
+    def registry1 = 'erhandemirbas/blue'
+    def registry2 = 'erhandemirbas/green'
     
     stage('Checking out git repo') {
       echo 'Checkout...'
