@@ -16,7 +16,7 @@ node {
 
   stage("Linting") {
     echo 'Linting'
-    sh 'tidy -q -e *.html'
+    sh 'tidy -q -e blue/*.html'
   }
 
   stage('Building image blue') {
