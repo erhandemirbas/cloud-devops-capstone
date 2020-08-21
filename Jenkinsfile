@@ -23,10 +23,10 @@ node {
   stage('Building image blue') {
     echo 'building blue image'
     withCredentials([usernamePassword(credentialsId: 'erhan-docker', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerUsername')]) {
-     	sh "sudo docker login -u ${env.dockerUsername} -p ${env.dockerHubPassword}"
-     	sh "sudo docker build -t ${registry1} blue/."
-     	sh "sudo docker tag ${registry1}"
-     	sh "sudo docker push ${registry1}"
+     	sh "docker login -u ${env.dockerUsername} -p ${env.dockerHubPassword}"
+     	sh "docker build -t ${registry1} blue/."
+     	sh "docker tag ${registry1}"
+     	sh "docker push ${registry1}"
     }
   }
 
