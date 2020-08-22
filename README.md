@@ -9,7 +9,7 @@ screenshots - images from project building
 Jenkinsfile - pipeline for the project
 blue-green-service.json - service file
 
-How to build projectÇ
+How to build project:
 1 - SSH into Jenkins instance and run eksctl command
 2 - After Cloudformation creates resources, create your Jenkins pipeline
 3 - Jenkins pipeline will create Docker images and upload to your Docker Hub
